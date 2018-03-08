@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Times</title>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="mainHeader">
+            <h1 id="title">Train Times</h1>
+        </div>
+    </header>
+    <form>
+        Train Name:
+        <input type="text" name="Train Name" id="train-name">
+        <br> Destination:
+        <input type="text" name="Train Time" id="destination">
+        <br> First Train Time:
+        <input type="text" name="First Train Time" id="first-train">
+        <br> Frequency:
+        <input type="text" name="Frequency" id="train-frequency">
+        <br>
+        <input type="submit" value="Trains Baby" id="add-train">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+
+</html>
