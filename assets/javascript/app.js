@@ -54,8 +54,12 @@ database.ref().on("child_added", function(snapshot) {
   var a = $("<tr>");
   a.append("<td>" + snapshot.val().train + "</td>");
   a.append("<td>" + snapshot.val().destination + "</td>");
-  a.append("<td>" + snapshot.val().firstTrain + "</td>");
   a.append("<td>" + snapshot.val().frequency + "</td>");
+  a.append("<td>" + snapshot.val().nextArrival + "</td>");
+  // a.append("<td>" + snapshot.val().firstTrain + "</td>");
+  a.append("<td>" + snapshot.val().minutesAway + "</td>");
 
   $("tbody").append(a);
 });
+
+function setTime
